@@ -114,30 +114,58 @@
 // 8. После успешного оформления заказа очистить поля формы.
 // 9. Не допускать стандартную перезагрузку страницы при отправке формы.
 
-const form = document.querySelector("#form")
-const inputName = document.querySelector("#name");
-const inputAge = document.querySelector("#age");
-const list = document.querySelector("#list");
+// const form = document.querySelector("#form")
+// const inputName = document.querySelector("#name");
+// const inputAge = document.querySelector("#age");
+// const list = document.querySelector("#list");
 
-const array = [
-    {
-        id:1,
-        name: "Концерт",
-        price: 5000,
-    },
-    {
-        id:2,
-        name:"Выставка",
-        price: 3000,
-    },
-    {
-        id:3,
-        name:"Кино",
-        price: 2500,
-    }
-]
-array.forEach(element => {
-    list.innerHTML += `
-    <li id="li-${element.id}">${element.name} - ${element.price}</li>
-    `
-});
+// const array = [
+//     {
+//         id:1,
+//         name: "Концерт",
+//         price: 5000,
+//     },
+//     {
+//         id:2,
+//         name:"Выставка",
+//         price: 3000,
+//     },
+//     {
+//         id:3,
+//         name:"Кино",
+//         price: 2500,
+//     }
+// ]
+// array.forEach(element => {
+//     list.innerHTML += `
+//     <li id="li-${element.id}">${element.name} - ${element.price}</li>
+//     `
+// });
+// form.addEventListener("submit",(event)=>{
+//     event.preventDefault()
+//     const name = inputName.value.trim();
+//     const email = inputEmail.value.trim();
+//     const count = Number(inputCount.value);
+//     const selected = array.find(element=>element.id===Number(list.value));
+
+//     if(name==="" || email==="" || list.value==="" || inputCount.value===""){
+//         result.textContent = "Заполните все поля!"
+//         return;
+//     }
+//     if(!Number.isInteger(count) || count<1 || count>10){
+//         result.textContent = "Введите количество билетов от 1 до 10!"
+//         return;
+//     }
+//     if(!inputEmail.validity.valid){
+//         result.textContent = "Введите корректный email!"
+//         return;
+//     }
+//     if(!selected){
+//         result.textContent = "Выберите мероприятие!"
+//         return;
+//     }
+
+//     const total = selected.price*count;
+//     result.textContent = `Order confirmed!\nИмя: ${name}\nEmail: ${email}\nМероприятие: ${selected.name}\nБилетов: ${count}\nTotal: ${total} тг`
+//     form.reset()
+// })

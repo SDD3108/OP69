@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <script src="script.js" defer></script> -->
+    <title>Task 2</title>
+</head>
+<body>
+    <div class="w-[400px] mx-auto mt-32 border rounded-lg p-6">
+        <h1 class="text-2xl font-bold mb-2 text-center">Генератор приветствия</h1>
+        <p class="text-gray-500 mb-4 text-center">Tell me about yourself.</p>
+        <form id="form" class="flex flex-col gap-3">
+            <input id="name" type="text" placeholder="Ваше имя" class="border rounded p-2">
+            <p id="length" class="text-gray-500 text-sm">Символов в имени: 0</p>
+            <input id="age" type="number" placeholder="Ваш возраст" class="border rounded p-2">
+            <button type="submit" class="border rounded p-2 cursor-pointer">Создать приветствие</button>
+        </form>
+        <p id="result" class="mt-4 text-center"></p>
+    </div>
+</body>
+</html>
